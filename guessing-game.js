@@ -45,12 +45,11 @@ Game.prototype.checkGuess = function () {
     if (!winningGuess && !pastGuess) {
         this.pastGuesses.push(this.playersGuess);
     }
-    if (this.pastGuesses.length > 4) {
+    if (this.pastGuesses.length > 4 && !winningGuess) {
         return "You Lose."
+    } else if (winningGuess) {
+        return 'You Win!'
     } else {
-        if (winningGuess) {
-            return 'You Win!'
-        }
         if (pastGuess) {
             return 'You have already guessed that number.';
         }
@@ -80,7 +79,7 @@ Game.prototype.direction = function () {
     if (this.difference() === 0) {
         return this.winningNumber + '!';
     }
-    if (this.playersGuess < this.winningNumber) {
+    if (this.pastGuesses.length < 5 && this.playersGuess < this.winningNumber) {
         return 'Guess higher!'
     } else {
         return 'Guess lower!'
