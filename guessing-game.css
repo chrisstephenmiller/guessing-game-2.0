@@ -70,9 +70,16 @@ ul {
     bottom: 0;
 }
 
-img {
+#fullstack {
     width: 350px;
     height: 100px;
+}
+
+#grace-hopper {
+    width: 350px;
+    height: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #background {    
@@ -107,7 +114,7 @@ img {
     text-shadow: rgb(77, 255, 23) 2px 2px 3px;
     margin: 0;
     position: relative;
-    bottom: 34px;
+    bottom: 32px;
     min-width: 1000px;
 }
 
@@ -154,6 +161,7 @@ img {
 .buttons-green.focus {
     outline: none;
     box-shadow: 0px 0px 10px white;
+    color: white;
 }
 
 .buttons-green:active,
@@ -180,4 +188,4 @@ img {
     border: solid black 3px;
     outline: none;
     box-shadow: 0px 0px 10px white;
-}
+}   
