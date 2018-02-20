@@ -91,8 +91,8 @@ Game.prototype.provideHint = function () {
     // game.range();
     var hintArr = [];
     hintArr.push(this.winningNumber);
-    // hintArr.push(generateWinningNumber(this.hintBottom, this.hintTop));
-    // hintArr.push(generateWinningNumber(this.hintBottom, this.hintTop));
+    hintArr.push(generateWinningNumber(0, 100));
+    hintArr.push(generateWinningNumber(0, 100));
     return shuffle(hintArr);
 }
 
