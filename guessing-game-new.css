@@ -1,0 +1,199 @@
+html, body {
+    height: 100%;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+#background{
+    background-image: url('Assets/background.png');
+    background-size: stretch;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: top;
+    border: solid #141414 15px;
+    background-color: #141414;
+    min-width: 1275px;
+}
+
+#app {
+    min-width: 800px;
+}
+
+#headers {
+    position: relative;
+    top:30px;
+}
+
+#title {
+    color: white;
+    border: solid#05FF07 5px;
+    border-radius: 50%;
+    padding: 30px 0px 25px;
+    width: 800px;
+    font-size: 44px;
+    font-family: 'Press Start 2P';
+    margin: 110px auto 10px;
+    text-shadow: 1px 1px 3px #05FF07;
+}
+
+#subtitles {
+    color: #05FF07;
+    margin: 0px auto 40px;
+    font-size: 44px;
+    font-family: 'VT323';
+}
+
+#input-parent{
+    width: 160px;
+    margin: 25px auto 40px;
+    position: relative;
+}
+
+#player-input {
+    width: 160px;
+    height: 160px;
+    color: white;
+    border-radius: 50%;
+    border: 4px #05FF07 solid;
+    background-color:#141414;
+    font-size: 92px;
+    font-family: 'VT323';
+}
+
+#player-input:focus{
+    color: white;
+    border: 4px #05FF07 solid;
+    background-color:#141414;
+    outline: none;
+    box-shadow: 0px 0px 10px white;
+}
+
+#player-input::placeholder {
+    color:white;
+}
+
+#player-input:focus::placeholder {
+    color:white;
+}
+
+#submit-button{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 110px;
+    left: 110px;
+    border-radius: 50%;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.guess {
+    display: inline-block;
+    height: 56px;
+    width: 64px;
+    border: 3px solid #05FF07;
+    margin: 0px 5px 5px;
+    background-color: #141414;    
+    border-radius: 6px;
+    font-size: 36px;
+    color: white;
+    font-family: 'VT323';
+}
+
+.buttons-green {
+    color: #141414;
+    font-size: 28px;
+    background-color: #05FF07;
+    border: solid #141414 3px;
+    border-radius: 10%;
+    font-family: 'VT323';
+}
+
+.buttons-green:hover {
+    color: white;
+    background-color: #141414;
+    border: solid #05FF07 3px;
+}
+
+.buttons-green:focus,
+.buttons-green.focus {
+    outline: none;
+    box-shadow: 0px 0px 10px white;
+    color: white;
+}
+
+.buttons-green:active,
+.buttons-green.active,
+.open > .dropdown-toggle.buttons-green {
+    color: #141414;
+    background-color: #05FF07;
+    border: solid #141414 3px;
+    outline: none;
+    box-shadow: 0px 0px 10px white;
+}
+
+.buttons-green:active:hover,
+.buttons-green.active:hover,
+.open > .dropdown-toggle.buttons-green:hover,
+.buttons-green:active:focus,
+.buttons-green.active:focus,
+.open > .dropdown-toggle.buttons-green:focus,
+.buttons-green:active.focus,
+.buttons-green.active.focus,
+.open > .dropdown-toggle.buttons-green.focus {
+    color: #141414;
+    background-color: #05FF07;
+    border: solid #141414 3px;
+    outline: none;
+    box-shadow: 0px 0px 10px white;
+}   
+
+.buttons-green:disabled:hover,
+.buttons-green.disabled:hover,
+.open > .dropdown-toggle.buttons-green:hover,
+.buttons-green:disabled:focus,
+.buttons-green.disabled:focus,
+.open > .dropdown-toggle.buttons-green:focus,
+.buttons-green:disabled.focus,
+.buttons-green.disabled.focus,
+.open > .dropdown-toggle.buttons-green.focus {
+    color: #141414;
+    background-color: #05FF07;
+    border: solid #141414 3px;
+    outline: none;
+}
+
+#footer {
+    height: 110px;
+    border-top: solid 2px #141414;
+    background-color: white;
+    position: fixed;
+    bottom:0;
+}
+
+#author {
+    font-size: 24px;
+    padding: 14px 0;
+}
+
+#fullstack {
+    width: 100%;
+    height: 100px;
+}
+
+#grace-hopper {
+    height: 100px;
+    width: 100%;
+}
+
+.winlose {
+    font-size: 72px;
+}
