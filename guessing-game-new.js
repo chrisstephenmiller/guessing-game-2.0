@@ -34,7 +34,7 @@ function Game(bottom, top) {
 Game.prototype.playersGuessSubmission = function (num) {
     if ((num < 1 || num > 100 || typeof (num) !== 'number' || num !== num) && this.won == this.lost) {
         if (this.pastGuesses.length == 0) {
-            return "Guess the number between 1 and 100... you have five chances!";
+            return "Guess the number between 1 and 100...";
         } else {
             return 'Not a valid guess.';
         }
@@ -116,7 +116,7 @@ function newGame() {
 }
 
 function gameReset() {
-    $('#subtitles').text('Guess the number between 1 and 100... you have five chances!');
+    $('#subtitles').text('Guess the number between 1 and 100...');
     $('.guess').text('-');
     this.pastGuesses = [];
     $('#player-input, #submit-button, #hint-btn').attr("disabled", false)
