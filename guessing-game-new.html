@@ -12,8 +12,8 @@
 </head>
 
 <body>
-    <div id="background" class="fluid-container">
-        <div id="app">
+    <div id="app">
+        <div id="game">
             <div id="headers">
                 <h1 id='title' class="center">
                     GuessingGame 2.0
@@ -21,16 +21,7 @@
                 <div id='subtitles' class="center">
                     Guess the number between 1 and 100...
                 </div>
-
-                <div id="game">
-                    <div id="input">
-                    </div>
-
-                    <div id="output">
-                    </div>
-                </div>
             </div>
-
             <div id='main' class="center">
                 <div id='input-parent'>
                     <input id="player-input" class="center" type="text" maxlength="3" autofocus>
@@ -49,24 +40,22 @@
                     <button id="hint-btn" class="buttons-green">Hint?</button>
                     <button id="reset-btn" class="buttons-green">Reset</button>
                 </div>
-
             </div>
         </div>
+    </div>
 
-        <div id="footer" class="center">
-            <div class="row align-items-center container-fluid">
-                <div id="author" class='col-xs-12 col-md-4 col-md-push-4'>
-                    <h4 id="author">PROJECT BY CHRIS MILLER</h4>
-                </div>
-                <div class='col-xs-12 col-md-4 col-md-pull-4'>
-                    <img id='fullstack' src='assets/fullstack.png'></img>
-                </div>
-
-                <div class='col-xs-12 col-md-4'>
-                    <img id='grace-hopper' src='assets/gracehopper.png'></img>
-                </div>
-            </div>
+    <div id="footer" class="row center">
+        <div id="author" class='col-xs-12 col-md-4 col-md-push-4'>
+            <h4 id="author">PROJECT BY CHRIS MILLER</h4>
         </div>
+        <div class='col-xs-12 col-md-4 col-md-pull-4'>
+            <img id='fullstack' src='assets/fullstack.png'></img>
+        </div>
+
+        <div class='col-xs-12 col-md-4'>
+            <img id='grace-hopper' src='assets/gracehopper.png'></img>
+        </div>
+    </div>
 </body>
 
 </html>

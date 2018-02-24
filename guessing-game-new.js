@@ -119,6 +119,7 @@ function gameReset() {
     $('#subtitles').text('Guess the number between 1 and 100...');
     $('.guess').text('-');
     this.pastGuesses = [];
+    $('#player-input').val('');
     $('#player-input, #submit-button, #hint-btn').attr("disabled", false)
     $('#player-input').focus();
 }

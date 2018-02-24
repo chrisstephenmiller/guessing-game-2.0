@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    background-color: #141414;
 }
 
 .center {
@@ -7,17 +8,28 @@ html, body {
     text-align: center;
 }
 
-#background{
+#app {
+    position: absolute;
     background-image: url('assets/background.png');
+    background-size: contain;
     background-repeat: no-repeat;
-    height: 100%;
-    background-position: top;
-    border: solid #141414 1px;
     background-color: #141414;
+    background-position: top;
+    width: 100%;
+    height: 85%;
+    min-height: 605px;
+    min-width: 975px;
+    margin: 0 0 110px;
 }
 
-#app {
-    min-width: 600px;
+#game {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: 604px;
+    max-height: 530px;
 }
 
 #headers {
@@ -26,38 +38,42 @@ html, body {
 }
 
 #title {
+    font-size: 2.2vw;
+    font-family: 'Press Start 2P';
+    text-shadow: 1px 1px 3px #05FF07;
     color: white;
     border: solid#05FF07 5px;
     border-radius: 50%;
-    padding: 30px 0px 0px;
-    width: 600px;
-    font-size: 40px;
-    font-family: 'Press Start 2P';
-    margin: 115px auto 5px;
-    text-shadow: 1px 1px 3px #05FF07;
+    width: 32vw;
+    height: 13vh;
+    padding: 3.5vh;
+    margin: 11.5vh auto 0;
+    max-width: 450px;
+    max-height: 530px;
 }
 
 #subtitles {
     color: #05FF07;
-    margin: 0px auto 40px;
-    font-size: 40px;
+    margin: .6vh auto 4.5vh;
+    font-size: 3vw;
     font-family: 'VT323';
+    white-space: nowrap;
 }
 
 #input-parent{
-    width: 160px;
-    margin: 25px auto 30px;
+    width: 12vw;
+    margin: 2vh auto 4vh;
     position: relative;
 }
 
 #player-input {
-    width: 160px;
-    height: 160px;
+    width: 12vw;
+    height: 12vw;
     color: white;
     border-radius: 50%;
     border: 4px #05FF07 solid;
     background-color:#141414;
-    font-size: 92px;
+    font-size: 7vw;
     font-family: 'VT323';
 }
 
@@ -78,14 +94,13 @@ html, body {
 }
 
 #submit-button{
-    width: 60px;
-    height: 60px;
+    width: 4.5vw;
+    height: 4.5vw;
     position: absolute;
-    top: 110px;
-    left: 110px;
+    top: 8vw;
+    left: 8vw;
     border-radius: 50%;
-    padding-top: 3px;
-    padding-left: 10px;
+    padding-left: .7vw;
 }
 
 ul {
@@ -95,24 +110,26 @@ ul {
 
 .guess {
     display: inline-block;
-    height: 56px;
-    width: 64px;
+    height: 7vh;
+    width: 5vw;
     border: 3px solid #05FF07;
-    margin: 0px 5px 5px;
+    margin: -1vh .5vw .7vh;
     background-color: #141414;    
     border-radius: 6px;
     font-size: 36px;
     color: white;
     font-family: 'VT323';
+    
 }
 
 .buttons-green {
     color: #141414;
-    font-size: 28px;
+    font-size: 2.2vw;
     background-color: #05FF07;
     border: solid #141414 3px;
     border-radius: 10%;
     font-family: 'VT323';
+    padding-top: .3vw;
 }
 
 .buttons-green:hover {
@@ -174,8 +191,8 @@ ul {
     border-top: solid 2px #141414;
     background-color: white;
     position: fixed;
-    bottom:0;
-    width: auto;
+    bottom: 0;
+    width: 100%;
 }
 
 #author {
@@ -193,6 +210,6 @@ ul {
     width: 100%;
 }
 
-.winlose {
-    font-size: 72px;
+.row {
+    background-color: white;
 }
