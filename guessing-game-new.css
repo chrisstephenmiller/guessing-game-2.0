@@ -182,8 +182,8 @@ ul {
     border-top: solid 2px #141414;
     background-color: white;
     position: fixed;
-    bottom:0;
-    width: auto;
+    bottom: 0;
+    width: 100%;
 }
 
 #author {
