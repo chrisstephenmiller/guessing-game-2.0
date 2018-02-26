@@ -147,6 +147,7 @@ function submitGuess(game) {
 
 
 $(function () {
+    // alert($('#app').height());
     var game = newGame();
     $('#submit-button').click(function () {
         submitGuess(game);
